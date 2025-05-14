@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>เลขาโอ๊ต – Thai Care Assistant</title>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Prompt', sans-serif; background: #f6fbff; padding: 2rem; color: #003366; line-height: 1.6; }
+    h1, h2 { text-align: center; color: #002b5e; }
+    .section { max-width: 900px; margin: auto; padding: 1rem 0; }
+    .services { display: flex; flex-wrap: wrap; gap: 1rem; justify-content: center; }
+    .service-box { background: #fff; border: 1px solid #cce0f5; padding: 1rem; border-radius: 10px; width: 250px; }
+    .review, footer { text-align: center; margin-top: 2rem; font-size: 0.95rem; }
+    .button { display: inline-block; background: #0077cc; color: white; padding: 0.8rem 1.2rem; border-radius: 8px; text-decoration: none; }
+    form { max-width: 600px; margin: 2rem auto; background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.05); }
+    label { display: block; margin-top: 1rem; font-weight: bold; }
+    input, textarea { width: 100%; padding: 0.8rem; margin-top: 0.3rem; border: 1px solid #ccc; border-radius: 5px; }
+    button[type=submit] { margin-top: 1.5rem; background: #0077cc; color: white; padding: 0.8rem 1.2rem; border: none; border-radius: 5px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+<div class="section">
+  <h1>เลขาโอ๊ต – Thai Care Assistant</h1>
+  <p style="text-align:center;">ผู้ช่วยของคุณในไทย สำหรับคนไทยที่อยู่ต่างประเทศ</p>
+  <p style="text-align:center;"><a class="button" href="#contact">📬 ติดต่อเลขาโอ๊ต</a></p>
+</div>
+
+<div class="section">
+  <h2>บริการของเรา</h2>
+  <div class="services">
+    <div class="service-box">
+      <h3>🏠 ดูแลบ้าน</h3>
+      <p>ตรวจบ้าน รายงาน จ่ายค่าน้ำไฟให้</p>
+    </div>
+    <div class="service-box">
+      <h3>🔑 หาที่อยู่อาศัย</h3>
+      <p>ช่วยหาบ้าน/ห้องเช่าให้ญาติที่ไทย</p>
+    </div>
+    <div class="service-box">
+      <h3>👵 ดูแลญาติผู้สูงอายุ</h3>
+      <p>เยี่ยม พาไปหาหมอ รายงานสม่ำเสมอ</p>
+    </div>
+    <div class="service-box">
+      <h3>🏥 ปรึกษาแพทย์</h3>
+      <p>มีคุณหมอให้คำแนะนำเรื่องสุขภาพ</p>
+    </div>
+  </div>
+</div>
+
+<div class="section review">
+  <h2>รีวิวจากลูกค้า</h2>
+  <p>“มั่นใจให้ดูแลบ้านที่ไทยได้เลย” – คุณเจ</p>
+  <p>“ฝากพ่อแม่ไว้กับทีมนี้ อุ่นใจสุดๆ” – คุณแม็กซ์</p>
+</div>
+
+<div class="section" id="contact">
+  <h2>ติดต่อเรา</h2>
+  <form name="contact" method="POST" data-netlify="true">
+    <input type="hidden" name="form-name" value="contact" />
+    <label>ชื่อของคุณ
+      <input type="text" name="name" required />
+    </label>
+    <label>อีเมล (ถ้ามี)
+      <input type="email" name="email" />
+    </label>
+    <label>ข้อความ
+      <textarea name="message" rows="5" required></textarea>
+    </label>
+    <button type="submit">ส่งข้อความ</button>
+  </form>
+</div>
+
+<footer>
+  LINE: @lekaod | Facebook: เลขาโอ๊ต | โทร: 09x-xxx-xxxx<br />
+  © 2025 เลขาโอ๊ต – Thai Care Services for Global Thai 💙
+</footer>
+
+</body>
+</html>
